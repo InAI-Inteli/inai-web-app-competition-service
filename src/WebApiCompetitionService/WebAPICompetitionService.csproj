@@ -23,16 +23,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Applitcation\Controllers\" />
 	  <Folder Include="Domain\DTOs\Helpers\" />
 	  <Folder Include="Domain\DTOs\Responses\" />
 	  <Folder Include="Domain\DTOs\ViewModels\" />
 	  <Folder Include="Domain\Enumerations\" />
 	  <Folder Include="Infra\Data\Context\" />
-	  <Folder Include="Infra\Data\Repository\Interfaces\" />
-	  <Folder Include="Infra\Data\UnitOfWork\" />
-	  <Folder Include="Service\Interfaces\" />
-	  <Folder Include="Service\Services\" />
 	</ItemGroup>
 
 </Project>

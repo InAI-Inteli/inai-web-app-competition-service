@@ -1,4 +1,4 @@
-﻿namespace WebAPIContentService.Infra.CrossCutting.Validation
+﻿namespace WebAPICompetitionService.Infra.CrossCutting.Validation
 {
     public class ValidationService
     {

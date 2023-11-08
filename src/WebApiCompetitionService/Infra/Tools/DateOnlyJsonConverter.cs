@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace WebAPIContentService.Infra.Tools
+namespace WebAPICompetitionService.Infra.Tools
 {
     public sealed class DateOnlyJsonConverter : JsonConverter<DateOnly>
     {

@@ -1,6 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using WebAPICompetitionService.Infra.Data.Context;
-using WebAPIContentService.Infra.Tools;
+using WebAPICompetitionService.Infra.Data.Repository;
+using WebAPICompetitionService.Infra.Data.Repository.Interfaces;
+using WebAPICompetitionService.Infra.Data.UnitOfWork;
+using WebAPICompetitionService.Infra.Tools;
+using WebAPICompetitionService.Service.Interfaces;
+using WebAPICompetitionService.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +32,15 @@ builder.Services.AddControllers()
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
-
+builder.Services.AddScoped<ICompeticoesRepository, CompeticoesRepository>();
+builder.Services.AddScoped<IEquipesRepository, EquipesRepository>();
+builder.Services.AddScoped<IEquipesUsuariosRepository, EquipesUsuariosRepository>();
+builder.Services.AddScoped<IInscricoesRepository, InscricoesRepository>();
+builder.Services.AddScoped<ICompeticoesService, CompeticoesService>();
+builder.Services.AddScoped<IEquipesService, EquipesService>();
+builder.Services.AddScoped<IEquipesUsuariosService, EquipesUsuariosService>();
+builder.Services.AddScoped<IInscricoesService, InscricoesService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
