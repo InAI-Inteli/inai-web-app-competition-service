@@ -27,13 +27,10 @@
 	  <Folder Include="Domain\DTOs\Helpers\" />
 	  <Folder Include="Domain\DTOs\Responses\" />
 	  <Folder Include="Domain\DTOs\ViewModels\" />
-	  <Folder Include="Domain\Entities\" />
 	  <Folder Include="Domain\Enumerations\" />
 	  <Folder Include="Infra\Data\Context\" />
-	  <Folder Include="Infra\Data\Mappings\" />
 	  <Folder Include="Infra\Data\Repository\Interfaces\" />
 	  <Folder Include="Infra\Data\UnitOfWork\" />
-	  <Folder Include="Infra\Tools\" />
 	  <Folder Include="Service\Interfaces\" />
 	  <Folder Include="Service\Services\" />
 	</ItemGroup>

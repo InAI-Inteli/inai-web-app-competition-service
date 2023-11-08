@@ -1,11 +1,33 @@
+using Microsoft.EntityFrameworkCore;
+using WebAPICompetitionService.Infra.Data.Context;
+using WebAPIContentService.Infra.Tools;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+builder.Configuration.AddJsonFile("appsettings.json");
+
+builder.Services.AddDbContext<CompetitionContext>(options =>
+{
+    var configuration = builder.Configuration;
+    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddControllers()
+               .AddJsonOptions(options =>
+               {
+                   options.JsonSerializerOptions.Converters.Add(new DateOnlyJsonConverter());
+               });
+
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+
 
 var app = builder.Build();
 
