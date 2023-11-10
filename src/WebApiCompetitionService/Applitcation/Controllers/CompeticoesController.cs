@@ -7,7 +7,7 @@ using WebAPICompetitionService.Service.Interfaces;
 
 namespace WebAPICompetitionService.Applitcation.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CompeticoesController : ControllerBase
     {
