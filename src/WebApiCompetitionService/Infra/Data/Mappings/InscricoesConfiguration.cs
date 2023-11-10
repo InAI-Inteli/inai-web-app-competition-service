@@ -16,9 +16,9 @@ namespace WebAPICompetitionService.Infra.Data.Mappings
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("created_at");
 
-            builder.Property(e => e.Curos)
+            builder.Property(e => e.Cursos)
                 .HasColumnType("character varying")
-                .HasColumnName("curos");
+                .HasColumnName("cursos");
 
             builder.Property(e => e.Email)
                 .HasColumnType("character varying")

@@ -1,9 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WebAPICompetitionService.Domain.DTOs.Responses;
 using WebAPICompetitionService.Domain.DTOs.ViewModels;
 using WebAPICompetitionService.Domain.Entities;
@@ -118,3 +114,7 @@ namespace WebAPICompetitionService.Applitcation.Controllers
         }
     }
 }
+
+
+
+

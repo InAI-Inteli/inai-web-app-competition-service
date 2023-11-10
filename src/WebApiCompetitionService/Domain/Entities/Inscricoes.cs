@@ -10,7 +10,7 @@ namespace WebAPICompetitionService.Domain.Entities
         public string? Nome { get; set; }
         public string? Email { get; set; }
         public string? InstituicaoEnsino { get; set; }
-        public string? Curos { get; set; }
+        public string? Cursos { get; set; }
         public string? Profissao { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdateAt { get; set; }
