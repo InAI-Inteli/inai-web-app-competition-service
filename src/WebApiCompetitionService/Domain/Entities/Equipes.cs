@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace WebAPICompetitionService.Domain.Entities
+﻿namespace WebAPICompetitionService.Domain.Entities
 {
     public partial class Equipes
     {
