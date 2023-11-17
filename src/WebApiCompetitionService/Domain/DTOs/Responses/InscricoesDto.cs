@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace WebAPICompetitionService.Domain.Entities
+﻿namespace WebAPICompetitionService.Domain.DTOs.Responses
 {
-    public partial class Inscricoes
+    public class InscricoesDto
     {
         public int Id { get; set; }
         public int IdCompeticao { get; set; }
@@ -14,7 +11,5 @@ namespace WebAPICompetitionService.Domain.Entities
         public string? Profissao { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdateAt { get; set; }
-
-        public virtual Competicoes IdCompeticaoNavigation { get; set; } = null!;
     }
 }
